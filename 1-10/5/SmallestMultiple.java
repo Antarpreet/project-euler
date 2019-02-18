@@ -1,3 +1,8 @@
+// Project Euler | Question 5
+
+// 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+// What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
 import java.util.*;
 
 import javax.swing.plaf.synth.SynthSliderUI;
@@ -8,7 +13,7 @@ public class SmallestMultiple {
 
         try {
             cin = new Scanner(System.in);
-            System.out.println("Enter the number of digits that you want to find the largest palindrome of their product: ");
+            System.out.println("Enter the largest number to find out the smallest positive number upto which all the numbers from 1 are a factor: ");
             int input;
             input = cin.nextInt();
             System.out.println("Number: " + input);
