@@ -5,8 +5,6 @@
 
 import java.util.*;
 
-import javax.swing.plaf.synth.SynthSliderUI;
-
 public class SmallestMultiple {
     public static void main(String[] args) {
         Scanner cin = null;
