@@ -4,6 +4,7 @@
 // Find the sum of all the primes below two million.
 
 import java.util.*;
+import java.time.*;
 
 public class SummationPrimesWithoutThread {
     public static void main(String[] args) {
@@ -16,9 +17,13 @@ public class SummationPrimesWithoutThread {
             input = cin.nextInt();
             System.out.println("Index: " + input);
             
+            Instant start = Instant.now();
             long sum = getSum(input);
+            Instant end = Instant.now();
+            Duration timeElapsed = Duration.between(start, end);
             
             System.out.println("Sum: " + sum);
+            System.out.println("Time taken: " + timeElapsed.toMillis()/1000 + " seconds");
         }finally {
             if (cin != null) {
                 cin.close();
@@ -43,7 +48,7 @@ public class SummationPrimesWithoutThread {
                     sum -= i;
                     break;
                 }
-                System.out.println(counter + " " + i + " " + sum);
+                // System.out.println(counter + " " + i + " " + sum);
             }
         }
         return sum;
