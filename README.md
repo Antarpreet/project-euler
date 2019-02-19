@@ -3,5 +3,5 @@ Project Euler was started by Colin Hughes (a.k.a. euler) in October 2001 as a su
 
 I have made all the solutions generalized so that they can be used to solve the problem for any viable range of input.
 
-### #1-5
+### #1-10
 These problems have been solved in Java.
