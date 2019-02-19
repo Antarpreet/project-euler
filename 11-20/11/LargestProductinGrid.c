@@ -54,10 +54,10 @@ long getProduct(int digits) {
                 numbers[m] = arr[i][k];
                 numbersLength++;
                 if(largest < productRight && numbersLength == digits) {
-                    printf("\nProductRight: %d  \t Numbers: ", productRight);
-                    for(int i = 0; i < numbersLength; i++) {
-                        printf("%d ", numbers[i]);
-                    }
+                    // printf("\nProductRight: %d  \t Numbers: ", productRight);
+                    // for(int i = 0; i < numbersLength; i++) {
+                    //     printf("%d ", numbers[i]);
+                    // }
                     largest = productRight;
                 }
             }
@@ -74,10 +74,10 @@ long getProduct(int digits) {
                 numbers[m] = arr[k][j];
                 numbersLength++;
                 if(largest < productDown && numbersLength == digits) {
-                    printf("\nProductDown: %d  \t Numbers: ", productDown);
-                    for(int i = 0; i < numbersLength; i++) {
-                        printf("%d ", numbers[i]);
-                    }
+                    // printf("\nProductDown: %d  \t Numbers: ", productDown);
+                    // for(int i = 0; i < numbersLength; i++) {
+                    //     printf("%d ", numbers[i]);
+                    // }
                     largest = productDown;
                 }
             }
@@ -94,10 +94,10 @@ long getProduct(int digits) {
                 numbers[m] = arr[k][n];
                 numbersLength++;
                 if(largest < productDiagonalRight && numbersLength == digits) {
-                    printf("\nproductDiagonalRight: %d  \t Numbers: ", productDiagonalRight);
-                    for(int i = 0; i < numbersLength; i++) {
-                        printf("%d ", numbers[i]);
-                    }
+                    // printf("\nproductDiagonalRight: %d  \t Numbers: ", productDiagonalRight);
+                    // for(int i = 0; i < numbersLength; i++) {
+                    //     printf("%d ", numbers[i]);
+                    // }
                     largest = productDiagonalRight;
                 }
             }
@@ -114,10 +114,10 @@ long getProduct(int digits) {
                 numbers[m] = arr[k][n];
                 numbersLength++;
                 if(largest < productDiagonalLeft && numbersLength == digits) {
-                    printf("\nproductDiagonalLeft: %d  \t Numbers: ", productDiagonalLeft);
-                    for(int i = 0; i < numbersLength; i++) {
-                        printf("%d ", numbers[i]);
-                    }
+                    // printf("\nproductDiagonalLeft: %d  \t Numbers: ", productDiagonalLeft);
+                    // for(int i = 0; i < numbersLength; i++) {
+                    //     printf("%d ", numbers[i]);
+                    // }
                     largest = productDiagonalLeft;
                 }
             }
@@ -131,7 +131,7 @@ int main() {
     int digits;
     long product;
 
-    printf( "Enter a value: ");
+    printf( "Enter the number of digits you want the greatest product of: ");
     scanf("%d", &digits);
 
     product = getProduct(digits);
