@@ -23,7 +23,7 @@ public class RunnableThread implements Runnable {
             Duration timeElapsed = Duration.between(start, end);
             
             System.out.println(threadName + " sum: " + sum);
-            System.out.println("Time taken (" + threadName + "): " + timeElapsed.toMillis()/1000 +" seconds");
+            System.out.println("Time taken (" + threadName + "): " + timeElapsed.toMillis() +" milliseconds");
         }
         finally {}
         // System.out.println("Thread " +  threadName + " exiting.");
